@@ -5,6 +5,8 @@ class Jack <Formula
   homepage 'http://jackaudio.org'
   md5 'd58e29a55f285d54e75134cec8e02a10'
 
+  depends_on 'pkg-config'
+
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking", "--prefix=#{prefix}"
     system "make install"
