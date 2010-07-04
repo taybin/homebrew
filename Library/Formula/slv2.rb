@@ -7,6 +7,7 @@ class Slv2 <Formula
 
   depends_on 'pkg-config'
   depends_on 'lv2core'
+  depends_on 'redland'
   depends_on 'jack' => :optional
 
   def install
