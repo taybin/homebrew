@@ -6,6 +6,7 @@ class Jack <Formula
   md5 'd58e29a55f285d54e75134cec8e02a10'
 
   depends_on 'pkg-config'
+  depends_on 'celt' => :optional
 
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking", "--prefix=#{prefix}"
