@@ -7,6 +7,7 @@ class Slv2 <Formula
 
   depends_on 'pkg-config'
   depends_on 'lv2core'
+  depends_on 'jack' => :optional
 
   def install
     system "./waf configure --prefix=#{prefix} --lv2dir=#{prefix}/share/lv2"
